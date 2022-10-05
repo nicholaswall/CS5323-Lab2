@@ -115,10 +115,47 @@
                     <view key="view" contentMode="scaleToFill" id="yKc-Nd-tEe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ypF-u3-ULy">
+                                <rect key="frame" x="148" y="433" width="118" height="31"/>
+                                <connections>
+                                    <action selector="sliderFrequencyChanged:" destination="ZAZ-d2-DWd" eventType="valueChanged" id="GVB-0A-dSn"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frequency: 10Hz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiX-bQ-hAi">
+                                <rect key="frame" x="142.5" y="359" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FFT Magnitude: 12dB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14x-aL-Uwh">
+                                <rect key="frame" x="126" y="532" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tzq-LO-xci"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aiX-bQ-hAi" firstAttribute="top" secondItem="tzq-LO-xci" secondAttribute="top" constant="271" id="Dwg-ml-qnl"/>
+                            <constraint firstItem="ypF-u3-ULy" firstAttribute="centerX" secondItem="yKc-Nd-tEe" secondAttribute="centerX" id="Qn2-Er-ba4"/>
+                            <constraint firstItem="aiX-bQ-hAi" firstAttribute="centerX" secondItem="yKc-Nd-tEe" secondAttribute="centerX" id="VCB-yU-zRp"/>
+                            <constraint firstItem="ypF-u3-ULy" firstAttribute="leading" secondItem="tzq-LO-xci" secondAttribute="leading" constant="150" id="bEE-NN-39a"/>
+                            <constraint firstItem="ypF-u3-ULy" firstAttribute="centerY" secondItem="yKc-Nd-tEe" secondAttribute="centerY" id="dqN-pp-7GP"/>
+                            <constraint firstItem="14x-aL-Uwh" firstAttribute="top" secondItem="ypF-u3-ULy" secondAttribute="bottom" constant="69" id="iZm-cV-9YE"/>
+                            <constraint firstItem="ypF-u3-ULy" firstAttribute="centerX" secondItem="yKc-Nd-tEe" secondAttribute="centerX" id="lSe-qI-GMu"/>
+                            <constraint firstItem="ypF-u3-ULy" firstAttribute="centerX" secondItem="aiX-bQ-hAi" secondAttribute="centerX" id="m0l-22-5gv"/>
+                            <constraint firstItem="14x-aL-Uwh" firstAttribute="centerX" secondItem="yKc-Nd-tEe" secondAttribute="centerX" id="pUR-Ca-wpz"/>
+                            <constraint firstItem="ypF-u3-ULy" firstAttribute="top" secondItem="aiX-bQ-hAi" secondAttribute="bottom" constant="53" id="wUu-1x-PTD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ULk-ie-jqM"/>
+                    <connections>
+                        <outlet property="fftMagnitudeLabel" destination="14x-aL-Uwh" id="iZz-FV-w1z"/>
+                        <outlet property="frequencyLabel" destination="aiX-bQ-hAi" id="3VB-kg-g5q"/>
+                        <outlet property="frequencySlider" destination="ypF-u3-ULy" id="0B7-eO-cb8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cny-N4-IJx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

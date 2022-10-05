@@ -122,24 +122,9 @@ class AudioModel {
         
         // Check Novicane.m line 471 to see the issue
         
-        
-//        var max:Float = 0.0
-//        if let arrayData = data{
-//            for i in 0..<Int(numFrames){
-//                if(abs(arrayData[i])>max){
-//                    max = abs(arrayData[i])
-//                }
-//            }
-//        }
-//        // can this max operation be made faster??
-//        print(max)
-        
-//        print("NUM FRAMES: \(numFrames)")
-        
         // co py samples from the microphone into circular buffer
         self.inputBuffer?.addNewFloatData(data, withNumSamples: Int64(numFrames))
         
-//        print("WORKS HERE...")
     }
     
     // To get the true max hz we take K (the index of the timeValues) and multiply it by Fs/N where

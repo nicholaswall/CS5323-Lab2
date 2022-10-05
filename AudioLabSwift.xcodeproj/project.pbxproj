@@ -22,6 +22,7 @@
 		B65B5A7F24F4798B00E74E73 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = B65B5A7E24F4798B00E74E73 /* Shaders.metal */; };
 		B65B5A8124F4AAB800E74E73 /* MetalGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B5A8024F4AAB800E74E73 /* MetalGraph.swift */; };
 		FAC344C928EDECDA002F17F4 /* PartBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC344C828EDECDA002F17F4 /* PartBViewController.swift */; };
+		FAC344CB28EE2A95002F17F4 /* PartBAudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC344CA28EE2A95002F17F4 /* PartBAudioModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		B65B5A7E24F4798B00E74E73 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 		B65B5A8024F4AAB800E74E73 /* MetalGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalGraph.swift; sourceTree = "<group>"; };
 		FAC344C828EDECDA002F17F4 /* PartBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartBViewController.swift; sourceTree = "<group>"; };
+		FAC344CA28EE2A95002F17F4 /* PartBAudioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartBAudioModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				B65B5A5D24F4409F00E74E73 /* PartAViewController.swift */,
 				B65B5A8024F4AAB800E74E73 /* MetalGraph.swift */,
 				B65B5A7924F4523C00E74E73 /* AudioModel.swift */,
+				FAC344CA28EE2A95002F17F4 /* PartBAudioModel.swift */,
 				B65B5A5F24F4409F00E74E73 /* Main.storyboard */,
 				FAC344C828EDECDA002F17F4 /* PartBViewController.swift */,
 				B65B5A6224F440A100E74E73 /* Assets.xcassets */,
@@ -185,6 +188,7 @@
 				B65B5A5E24F4409F00E74E73 /* PartAViewController.swift in Sources */,
 				B65B5A5A24F4409F00E74E73 /* AppDelegate.swift in Sources */,
 				B65B5A7F24F4798B00E74E73 /* Shaders.metal in Sources */,
+				FAC344CB28EE2A95002F17F4 /* PartBAudioModel.swift in Sources */,
 				FAC344C928EDECDA002F17F4 /* PartBViewController.swift in Sources */,
 				B65B5A7D24F458D700E74E73 /* FFTHelper.m in Sources */,
 				B65B5A5C24F4409F00E74E73 /* SceneDelegate.swift in Sources */,
